@@ -1,0 +1,11 @@
+CREATE DATABASE prova_ab2;
+
+USE prova_ab2;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50),
+    email VARCHAR(100) UNIQUE,
+    senha VARCHAR(100),
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
